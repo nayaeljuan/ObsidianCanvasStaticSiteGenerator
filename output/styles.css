@@ -1,0 +1,45 @@
+
+body { margin: 0; padding: 0; height: 100%; overflow: auto; position: relative; width: 10000px; height: 10000px; }
+body { font-family: Arial, sans-serif; position: relative; min-height: 100vh; }
+div[class] { position: absolute; padding: 20px; border: 1px solid #ddd; box-sizing: border-box; }
+.content { white-space: pre-wrap; }
+.media-mystere-md {
+    left: 3556px;
+    top: 4043px;
+}
+
+.le-cd-compact-disque-md {
+    left: 5219px;
+    top: 4795px;
+}
+
+.la-cassette-audio-md {
+    left: 4200px;
+    top: 4795px;
+}
+
+.le-disque-a-microsillons-md {
+    left: 3120px;
+    top: 4795px;
+}
+
+.le-piratage-md {
+    left: 4920px;
+    top: 4195px;
+}
+
+.home-recording-et-samples-md {
+    left: 3680px;
+    top: 4395px;
+}
+
+.chasse-au-tresor-md {
+    left: 3160px;
+    top: 5080px;
+}
+
+.mes-premieres-experiences-md {
+    left: 3680px;
+    top: 4995px;
+}
+

@@ -1,0 +1,217 @@
+@font-face{
+    font-family: "publifluor";
+    src: url(font/PubliFluorNormale.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "handwriting";
+    src: url(font/Handwriting-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "texte";
+    src: url(font/B.S.-Mono-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-image: url("images/backgroung.jpg");
+    margin-top: 60px;
+    grid-template-rows: 100px 1fr;
+}
+p{
+    font-family: "texte";
+    color: rgb(131, 26, 54);
+    text-align: justify;
+}
+.media-mystere-md {
+  grid-row: 1/2;
+  position: sticky !important;      
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw; 
+  height: 60px;         
+  background-color: #333;
+  z-index: 1000;        
+}
+.media-mystere-md h2 {
+    margin: 0 !important;
+    text-align: center;
+}
+
+.le-piratage-md h2{
+    font-family: "handwriting";
+    font-size: 40pt;
+    background-image: url("images/CADRE-TITRE-2.png");
+    background-size: 100%;
+    background-position: center;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+    padding-top: 93px !important;
+    padding-bottom: 70px !important;
+    color: rgb(131, 26, 54);
+}
+.la-cassette-audio-md h2{
+    font-family: "publifluor";
+    font-size: 50pt;
+    margin: 0 !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    color:#ebf849;;
+    background-image: url("images/cadre-titre-rouge.png");
+    background-size: 100% 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.la-cassette-audio-md p {
+    font-size: 25px;
+}
+.le-cd-compact-disque-md h2{
+    font-family: "publifluor";
+    font-size: 50pt;
+    margin: 0 !important;
+    padding: 60px !important;
+    width: 500px;
+    text-align: center;
+    background-image: url("images/cadre-titre-rouge.png");
+    background-size: 100% 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:#ebf849;
+}
+.le-disque-a-microsillons-md h2{
+    font-family: "publifluor";
+    font-size: 50pt;
+    width: 500px;
+    margin: 0 !important;
+    padding: 60px !important;
+    text-align: center;
+    background-image: url("images/cadre-titre-rouge.png");
+    background-size: 100% 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:#ebf849;
+}
+
+.home-recording-et-samples-md h2{
+    font-family: "handwriting";
+    font-size: 40pt;
+    width: 500px;
+    text-align: center;
+    color: rgb(131, 26, 54);
+}
+.le-baladeur-md h2{
+    font-family: "handwriting";
+    font-size: 40pt;
+    color: rgb(131, 26, 54);
+    
+}
+.le-baladeur-md h2{
+    background-image: url("images/CADRE-TITRE-1.png");
+    background-size: 100%;
+    background-position: center;
+    margin: 0 !important;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+    padding-top: 130px !important;
+    padding-bottom: 130px !important;
+    
+}
+div[class] {
+    
+    border: 0px !important;
+}
+.home-recording-et-samples-md{
+    background-image: url("images/CADRE-TITRE-2.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 41px !important;
+    padding-right: 41px !important;
+    padding-top: 110px !important;
+    padding-bottom: 100px !important;
+}
+.la-cassette-audio-md{
+    width: 600px;
+}
+.mes-premieres-experiences-md{
+    width: 500px;
+
+    
+}
+.mes-premieres-experiences-md h2{
+    font-family: "handwriting";
+    font-size: 40pt;
+    width: 400px;
+    text-align: center;
+    color: rgb(131, 26, 54);
+    background-image: url("images/CADRE-TITRE-1.png");
+    background-size: 100% 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 41px !important;
+    padding-right: 41px !important;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+    margin: 0 !important;
+
+}
+.chasse-au-tresor-md h2{
+    font-family: "handwriting";
+    font-size: 40pt;
+    width: 400px;
+    text-align: center;
+    color: rgb(131, 26, 54);
+    background-image: url("images/CADRE-TITRE-1.png");
+    background-size: 100% 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 41px !important;
+    padding-right: 41px !important;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+    margin: 0 !important;
+
+}
+.chasse-au-tresor-md p{
+     width: 500px;
+     font-size: 25px
+}
+.mes-premieres-experiences-md p{
+    display: none;
+    font-size: 25px;
+    margin-bottom: 0 !important;
+}
+.mes-premieres-experiences-md img{
+    width: 400px;
+    margin-top: 25px;
+}
+.btn-lire {
+  display: block;               /* l'étire sur toute la ligne */
+  margin: 10px auto 15px auto;
+  padding: 24px 22px;
+  background-image: url(images/fondbouton.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  color:  rgb(131, 26, 54);
+  border: none;
+  
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "handwriting";
+  
+  
+}
+
+.btn-lire:hover {
+  color:  rgb(55, 12, 23);
+}
+
+
