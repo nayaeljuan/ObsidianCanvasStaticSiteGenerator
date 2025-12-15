@@ -1,9 +1,4 @@
-@font-face{
-    font-family: "publifluor";
-    src: url(font/PubliFluorNormale.otf);
-    font-weight: normal;
-    font-style: normal;
-}
+
 @font-face{
     font-family: "handwriting";
     src: url(font/Handwriting-Regular.ttf);
@@ -16,10 +11,22 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face{
+    font-family: "velvetbold";
+    src: url(font/Velvelyne-Bold.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "velvet";
+    src: url(font/Velvelyne-Book.otf);
+    font-weight: normal;
+    font-style: normal;
+}
 body{
     background-image: url("images/backgroung.jpg");
     margin-top: 60px;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 250px 1fr;
 }
 p{
     font-family: "texte";
@@ -27,12 +34,15 @@ p{
     text-align: justify;
 }
 .media-mystere-md {
+  font-family: "velvetbold";
+  color:#ebf849;
+  font-size: 25PX;
   grid-row: 1/2;
   position: sticky !important;      
   top: 0 !important;
   left: 0 !important;
   width: 100vw; 
-  height: 60px;         
+  height: 83px;         
   background-color: #333;
   z-index: 1000;        
 }
@@ -54,7 +64,8 @@ p{
     color: rgb(131, 26, 54);
 }
 .la-cassette-audio-md h2{
-    font-family: "publifluor";
+    line-height: 0.8;
+    font-family: "velvetbold";
     font-size: 50pt;
     margin: 0 !important;
     padding-left: 50px !important;
@@ -62,7 +73,7 @@ p{
     padding-top: 80px;
     padding-bottom: 80px;
     text-align: center;
-    color:#ebf849;;
+    color:#ebf849;
     background-image: url("images/cadre-titre-rouge.png");
     background-size: 100% 90%;
     background-position: center;
@@ -73,7 +84,8 @@ p{
     font-size: 25px;
 }
 .le-cd-compact-disque-md h2{
-    font-family: "publifluor";
+    line-height: 0.8;
+    font-family: "velvetbold";
     font-size: 50pt;
     margin: 0 !important;
     padding: 60px !important;
@@ -86,7 +98,8 @@ p{
     color:#ebf849;
 }
 .le-disque-a-microsillons-md h2{
-    font-family: "publifluor";
+    line-height: 0.8;
+    font-family: "velvetbold";
     font-size: 50pt;
     width: 500px;
     margin: 0 !important;
