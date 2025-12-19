@@ -35,7 +35,7 @@ p{
 }
 .media-mystere-md {
   font-family: "velvetbold";
-  color:#ebf849;
+  background-color:#3794ff91;
   font-size: 25PX;
   grid-row: 1/2;
   position: sticky !important;      
@@ -43,7 +43,7 @@ p{
   left: 0 !important;
   width: 100vw; 
   height: 83px;         
-  background-color: #333;
+  color: rgb(131, 26, 54);
   z-index: 1000;        
 }
 .media-mystere-md h2 {
