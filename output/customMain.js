@@ -1,18 +1,42 @@
-// Récupère toutes les sections avec une classe spécifique
-const sections = document.querySelectorAll(".mes-premieres-experiences-md, .la-cassette-audio-md, .chasse-au-tresor-md");
+// Récupère toutes les sections concernées
+const sections = document.querySelectorAll(
+  ".mes-premieres-experiences-md, .la-cassette-audio-md, .chasse-au-tresor-md"
+);
 
-sections.forEach((section, index) => {
-  const paragraphs = section.querySelectorAll(".content p");
-  paragraphs.forEach(p => p.style.display = "none");
+sections.forEach(section => {
+  const content = section.querySelector(".content");
 
+  // Crée le bouton
   const bouton = document.createElement("button");
-  bouton.textContent = `lire`;
-  bouton.classList.add("btn-lire"); // ← AJOUT DE LA CLASSE
-  section.insertBefore(bouton, section.querySelector(".content"));
+  bouton.textContent = "lire";
+  bouton.classList.add("btn-lire");
 
+  // Cache le contenu au départ
+  content.classList.remove("active");
+
+  // Place le bouton avant le contenu
+  section.insertBefore(bouton, content);
+
+  // Clic sur le bouton lire / fermer
   bouton.addEventListener("click", () => {
-    const isHidden = paragraphs[0].style.display === "none";
-    paragraphs.forEach(p => p.style.display = isHidden ? "block" : "none");
-    bouton.textContent = isHidden ? `X` : `lire`;
+    const isOpen = content.classList.contains("active");
+
+    if (isOpen) {
+      content.classList.remove("active");
+      bouton.textContent = "lire";
+    } else {
+      content.classList.add("active");
+      bouton.textContent = "X";
+    }
+  });
+
+  // Fermer en cliquant sur le fond
+  content.addEventListener("click", (e) => {
+    if (e.target === content) {
+      content.classList.remove("active");
+      document.body.classList.remove("modal-open");
+      bouton.textContent = "lire";
+    }
   });
 });
+

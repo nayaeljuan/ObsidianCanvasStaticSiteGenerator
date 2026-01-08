@@ -226,5 +226,49 @@ div[class] {
 .btn-lire:hover {
   color:  rgb(55, 12, 23);
 }
+/* ===== OVERLAY TEXTE CENTRÉ ET SCROLLABLE ===== */
 
+/* Conteneur overlay */
+.content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
+  max-width: 700px;
+  width: 90%;
+  max-height: 70vh;   /* limite la hauteur du cadre */
+  padding: 30px;
+
+  background: #fff;
+  border-radius: 12px;
+
+  overflow-y: auto;   /* scroll pour tout le texte */
+  display: none;      /* caché par défaut */
+  z-index: 2000;
+
+  text-align: left;   /* texte aligné à gauche pour lecture */
+  white-space: normal;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centre horizontal du bloc texte */
+}
+
+/* Affichage lorsqu'on ouvre */
+.content.active {
+  display: flex;
+}
+
+/* Paragraphes */
+.content p {
+  display: block;
+  margin: 0 0 1em 0;    /* espace entre paragraphes */
+  max-width: 600px;      /* largeur du texte pour centrer */
+  text-align: justify;   /* justifie le texte pour lecture agréable */
+}
+
+/* Bloquer scroll de la page quand overlay ouvert */
+body.modal-open {
+  overflow: hidden;
+}
